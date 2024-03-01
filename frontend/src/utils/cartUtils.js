@@ -9,10 +9,10 @@
     state.itemsPrice = addDecimals((state.cartItems.reduce((acc,item) => acc + (item.price) * (item.qty),0)));
 
     //Calculate shipping price
-    state.shippingPrice = addDecimals((state.itemsPrice) > 100 ? 10 : 0);
+    state.shippingPrice = addDecimals((state.itemsPrice) > 100 ? 0 : 10);
 
     //Calculate tax price
-    state.taxprice = addDecimals((0.15 * (state.itemsPrice)));
+    state.taxPrice = addDecimals((0.15 * (state.itemsPrice)));
 
     //Calculate total price
     state.totalPrice = (
