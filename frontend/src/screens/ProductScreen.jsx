@@ -32,7 +32,11 @@ const navigate = useNavigate();
 
   return (
     <>
-      <Link className="btn btn-light my-3">Go Back</Link>
+      <Link to='/'
+         className="btn btn-light my-3">
+          Go Back
+        
+      </Link>
       
       {isLoading ? (
         <Loader />
