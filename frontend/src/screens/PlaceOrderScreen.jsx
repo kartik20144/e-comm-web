@@ -91,7 +91,7 @@ try {
                         </Col>
 
                         <Col md={4}>
-                          {item.qty} x &#8377;{item.price} = &#8377;
+                          {item.qty} x ${item.price} = $
                           {item.qty * item.price}
                         </Col>
                       </Row>
@@ -114,7 +114,7 @@ try {
                     Items:
                     </Col>
                     <Col>
-                    &#8377;{cart.itemsPrice}
+                    ${cart.itemsPrice}
                     </Col>
                 </Row>
                 <Row>
@@ -122,7 +122,7 @@ try {
                     Shipping:
                     </Col>
                     <Col>
-                    &#8377;{cart.shippingPrice}
+                    ${cart.shippingPrice}
                     </Col>
                 </Row>
                 <Row>
@@ -130,7 +130,7 @@ try {
                     Tax:
                     </Col>
                     <Col>
-                    &#8377;{cart.taxPrice}
+                    ${cart.taxPrice}
                     </Col>
                 </Row>
                 <Row>
@@ -138,7 +138,7 @@ try {
                     Total:
                     </Col>
                     <Col>
-                    &#8377;{cart.totalPrice}
+                    ${cart.totalPrice}
                     </Col>
                 </Row>
               </ListGroup.Item>

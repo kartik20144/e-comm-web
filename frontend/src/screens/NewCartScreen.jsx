@@ -86,7 +86,7 @@ const checkoutHandler = () => {
                 <h2>
                   Subtotal ({cartItems.reduce((acc,item) => acc + item.qty ,0)})
                 </h2>
-                &#8377; {cartItems.reduce((acc,item) => acc + item.qty*item.price ,0).toFixed(2)}
+                $ {cartItems.reduce((acc,item) => acc + item.qty*item.price ,0).toFixed(2)}
               </ListGroup.Item>
               <ListGroup.Item>
                 <Button type='button' className='btn-block' 
