@@ -2,7 +2,6 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { useGetProductsQuery } from "../slices/productsApiSlice";
 import Product from '../components/product'
-import Loader from "../components/Loader";
 import Message from "../components/Message";
 import { useParams } from "react-router-dom";
 import Paginate from "../components/Paginate";
@@ -26,7 +25,7 @@ const {data, isLoading, error} = useGetProductsQuery({keyword, pageNumber});
       </Link>
     )}
     {isLoading ? (
-      <Loader />
+      <center><h1>Loading</h1></center>
     ) : error ? (
     <Message variant='danger'>{error?.data?.message || error.error }</Message>
     ) : (
