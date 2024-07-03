@@ -15,11 +15,14 @@
     state.taxPrice = addDecimals((0.15 * (state.itemsPrice)));
 
     //Calculate total price
-    state.totalPrice = (
+    state.totalPrice = addDecimals(
       Number(state.itemsPrice) + 
       Number(state.shippingPrice)+
-      Number(state.taxprice)
-    ).toFixed(2);
+      Number(state.taxPrice)
+    );
+      
+
+
 
     localStorage.setItem("cart",JSON.stringify(state))
 
